@@ -1,0 +1,22 @@
+.social_contant {
+  display: flex;
+  justify-content: start;
+}
+.social-icon--container {
+  padding-right: 30px;
+}
+.socail-icon {
+  height: 30px;
+}
+
+@media only screen and (max-width: 720px) {
+  .social_contant {
+    justify-content: center;
+  }
+  .social-icon--container {
+    padding-right: 20px;
+  }
+  .socail-icon {
+    height: 20px;
+  }
+}

@@ -1,5 +1,5 @@
 .hello {
-  margin: 100px 0;
+  padding: 100px 0;
 }
 .img--container {
   display: flex;
@@ -19,7 +19,6 @@
 .Hello_text--conatiner {
   margin-top: 10px;
   text-align: center;
-  color: var(--color-primary);
 }
 .content--header {
   font-size: 42px;

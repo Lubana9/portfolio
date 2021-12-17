@@ -1,0 +1,36 @@
+.about {
+  display: flex;
+  justify-content: space-betwen;
+  align-items: center;
+  background: var(--color-background-secondary);
+  padding: 70px 0;
+}
+
+.about--img {
+  height: 360px;
+}
+
+.about_info {
+  padding: 12px;
+}
+.about_info--header {
+  font-size: 36px;
+  font-weight: 700;
+}
+.about_info--heading {
+  font-size: 20px;
+  font-weight: 600;
+}
+@media only screen and (max-width: 720px) {
+  .about {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .about--img {
+    height: 280px;
+  }
+  .about_info--txt {
+    font-size: 18px;
+  }
+}
