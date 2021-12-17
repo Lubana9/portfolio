@@ -4,7 +4,10 @@ const Mobile: React.FC = () => {
   return (
     <ul className="mobile">
       <li className="mobile--option">
-        <a href="#aboutme">About me</a>
+        <a href="#hello">Hom</a>
+      </li>
+      <li className="mobile--option">
+        <a href="#aboutme">About</a>
       </li>
       <li className="mobile--option">
         <a href="#skills">Skills</a>

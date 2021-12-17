@@ -1,0 +1,45 @@
+.hello {
+  margin: 100px 0;
+}
+.img--container {
+  display: flex;
+  width: 150px;
+  height: 150px;
+  justify-content: center;
+
+  margin: auto;
+}
+.porfile--img {
+  border: 2px solid var(--color-primary);
+  border-radius: 50%;
+  overflow: hidden;
+  padding: 5px 0 0 0;
+  background-image: url("./img/background.jpg");
+}
+.Hello_text--conatiner {
+  margin-top: 10px;
+  text-align: center;
+  color: var(--color-primary);
+}
+.content--header {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.content--txt {
+  font-size: 24px;
+  overflow: hidden;
+  opacity: 0.6;
+  margin: 0 auto;
+  animation: typing 4s steps(50);
+  white-space: nowrap;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}

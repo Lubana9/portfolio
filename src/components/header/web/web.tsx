@@ -3,7 +3,10 @@ const Web: React.FC = () => {
   return (
     <div className="web">
       <div className="web--option">
-        <a href="#aboutme">About me</a>
+        <a href="#hello">Home</a>
+      </div>
+      <div className="web--option">
+        <a href="#aboutme">About</a>
       </div>
       <div className="web--option">
         <a href="#skills">Skills</a>
