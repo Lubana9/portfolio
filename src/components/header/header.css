@@ -1,0 +1,54 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+  padding: 12px;
+  position: relative;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+}
+
+.menu-icon {
+  width: fit-content;
+  font-size: 24px;
+  fill: var(--color-primary);
+}
+.menu-icon:hover {
+  transform: scale(1.1);
+  fill: var(--color-secondary);
+}
+
+.mobile-menu {
+  display: none;
+}
+
+.web-menu {
+  display: flex;
+}
+
+.logo {
+  font-size: 40px;
+  color: #fcb960;
+  font-weight: 800;
+  font-family: Brush Script MT, Brush Script Std, cursive;
+}
+
+@media only screen and (max-width: 720px) {
+  .mobile-menu {
+    display: flex;
+    flex-direction: column;
+  }
+  .icon--container {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .web-menu {
+    display: none;
+    font-size: 24px;
+  }
+}

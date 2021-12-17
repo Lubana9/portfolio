@@ -1,0 +1,23 @@
+.mobile {
+  display: flex;
+  flex-direction: column;
+}
+.mobile--option {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.mobile--option a {
+  text-decoration: none;
+  color: var(--color-primary);
+  padding: 20px 0;
+  align-items: center;
+}
+.mobile li {
+  list-style: none;
+}
+
+.mobile--option :hover {
+  color: var(--color-secondary);
+  transform: scale(1.1);
+}
