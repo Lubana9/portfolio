@@ -9,7 +9,7 @@ const SocialContact = () => {
         return (
           <a href={item.link}>
             <div className="social-icon--container">
-              <img src={item.icon} alt="" className="socail-icon" />
+              <img src={item.icon} alt="" className="social-icon" />
             </div>
           </a>
         );

@@ -1,0 +1,57 @@
+.card--container {
+  width: 300px;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid var(--color-background-secondary);
+  border-radius: 12px;
+  margin: 20px;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  border-color: var(--color-primary);
+  transition: all 0.5s;
+}
+.project--img {
+  width: 100%;
+  height: 150px;
+  overflow: hidden;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.project-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--color-secondary);
+  padding-top: 5px;
+}
+
+.project--links a {
+  text-decoration: none;
+  color: var(--color-primary);
+}
+
+.project--links {
+  display: flex;
+}
+
+.link--btn {
+  justify-content: center;
+  align-items: center;
+  padding: 4px 8px;
+}
+
+.project--links a :hover {
+  color: #c53f3f;
+  transition: color 0.5s;
+}
+
+@media only screen and (max-width: 720px) {
+  .project--img {
+    height: 200px;
+  }
+}

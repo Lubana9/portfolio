@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 :root {
   --color-backround: #212121;
   --color-background-primary: #202020;

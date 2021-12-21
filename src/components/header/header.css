@@ -21,6 +21,7 @@
 .menu-icon:hover {
   transform: scale(1.1);
   fill: var(--color-secondary);
+  transition: all 0.5s;
 }
 
 .mobile-menu {
@@ -33,7 +34,15 @@
 
 .logo {
   font-size: 40px;
-  color: #fcb960;
+
+  color: rgb(197, 63, 63); /*#fcb960 */
+  background: linear-gradient(
+    90deg,
+    rgba(197, 63, 63, 1) 35%,
+    rgba(252, 185, 96, 0.6225840678068102) 100%
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-weight: 800;
   font-family: Brush Script MT, Brush Script Std, cursive;
 }
@@ -42,6 +51,7 @@
   .mobile-menu {
     display: flex;
     flex-direction: column;
+    width: 100%;
   }
   .icon--container {
     display: flex;
@@ -50,5 +60,10 @@
   .web-menu {
     display: none;
     font-size: 24px;
+  }
+  .logo {
+    position: absolute;
+    left: 5px;
+    top: 0;
   }
 }
