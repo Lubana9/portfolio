@@ -8,6 +8,7 @@
 }
 .copyright {
   padding-top: 10px;
+  padding-bottom: 20px;
   color: var(--color-primary);
   word-spacing: 7px;
   letter-spacing: 3px;
