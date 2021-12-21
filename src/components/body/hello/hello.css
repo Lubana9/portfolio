@@ -14,7 +14,7 @@
   border-radius: 50%;
   overflow: hidden;
   padding: 5px 0 0 0;
-  background-image: url("./img/background.jpg");
+  background: var(--color-background-secondary);
 }
 .Hello_text--conatiner {
   margin-top: 10px;
