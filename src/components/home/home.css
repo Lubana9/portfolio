@@ -22,6 +22,12 @@ body {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
+.section--title {
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+  padding-bottom: 20px;
+}
 @media only screen and (max-width: 1024px) {
   .home {
     width: 90%;

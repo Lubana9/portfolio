@@ -8,7 +8,6 @@
 
 .about--img {
   height: 360px;
-  padding-right: 12px;
 }
 
 .about_info {
@@ -22,6 +21,35 @@
   font-size: 20px;
   font-weight: 600;
   color: var(--color-secondary);
+}
+.download {
+  display: flex;
+  border: 1px solid var(--color-primary);
+  width: fit-content;
+  padding: 8px 16px;
+  border-radius: 40px;
+  margin-top: 20px;
+}
+.download:not(:hover) img {
+  display: none;
+}
+.download-icon {
+  height: 20px;
+  vertical-align: middle;
+}
+.download a {
+  text-decoration: none;
+  color: var(--color-primary);
+  font-weight: 600;
+}
+.download:hover {
+  background: var(--color-secondary);
+  border-color: var(--color-background-secondary);
+  transform: scale(1.1);
+  transition: all 0.5s;
+}
+.download:hover a {
+  color: var(--color-background-secondary);
 }
 @media only screen and (max-width: 720px) {
   .about {
@@ -37,5 +65,10 @@
   }
   .header-container {
     text-align: center;
+  }
+  .download {
+    width: auto;
+    justify-content: center;
+    margin: 20px 40px;
   }
 }

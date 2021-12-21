@@ -1,24 +1,15 @@
 .projects {
   background: var(--color-background-secondary);
-
-  padding-top: 20px;
+  padding-top: 50px;
 }
 .project--cards {
   display: flex;
   justify-content: space-around;
 }
-.section-title {
-  font-size: 36px;
-  font-weight: 700;
-  padding-left: 12px;
-  padding-bottom: 10px;
-}
+
 @media only screen and (max-width: 720px) {
   .project--cards {
     flex-direction: column;
     align-items: center;
-  }
-  .section-title {
-    text-align: center;
   }
 }

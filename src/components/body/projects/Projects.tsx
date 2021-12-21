@@ -7,7 +7,7 @@ const Projects = () => {
   const data = ProjectData;
   return (
     <div className="projects">
-      <div className="section-title">Projects</div>
+      <div className="section--title">Projects</div>
       <div className="project--cards">
         {" "}
         {data.map((item) => {
