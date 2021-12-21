@@ -5,10 +5,9 @@ import "./home.css";
 const Home: React.FC = () => {
   return (
     <div className="home">
-      <div>
-        <Header />
-        <Body />
-      </div>
+      <Header />
+      <Body />
+      <Footer />
     </div>
   );
 };
