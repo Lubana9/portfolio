@@ -7,7 +7,7 @@ const SocialContact = () => {
     <div className="social_contant">
       {data.map((item) => {
         return (
-          <a href={item.link}>
+          <a key={item.platform} href={item.link}>
             <div className="social-icon--container">
               <img src={item.icon} alt="" className="social-icon" />
             </div>

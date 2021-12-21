@@ -1,5 +1,4 @@
 import "./card.css";
-import { ProjectData } from "@components/data/projects";
 export type CardProps = {
   project: any;
 };

@@ -11,7 +11,7 @@ const Projects = () => {
       <div className="project--cards">
         {" "}
         {data.map((item) => {
-          return <Card project={item} />;
+          return <Card key={item.id} project={item} />;
         })}
       </div>
     </div>

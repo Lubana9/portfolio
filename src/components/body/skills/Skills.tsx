@@ -10,7 +10,7 @@ const Skills = () => {
       <div className="skills--list">
         {data.map((item) => {
           return (
-            <div className="skill--container">
+            <div key={item.name} className="skill--container">
               <div>{item.icon}</div>
               <div className="skill--title"> {item.name}</div>
             </div>
