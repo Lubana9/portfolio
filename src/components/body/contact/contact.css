@@ -15,6 +15,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-left: 12px;
 }
 .contact--input {
   width: 100%;
@@ -70,7 +71,17 @@
   display: flex;
   align-items: center;
 }
-@media only screen and (max-width: 710px) {
+.successful {
+  color: #40e0d0;
+}
+.error {
+  color: red;
+}
+.thanks_message {
+  padding-left: 12px;
+  padding-bottom: 10px;
+}
+@media only screen and (max-width: 780px) {
   .grid {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -88,5 +99,8 @@
   }
   .contact--social {
     margin-bottom: 20px;
+  }
+  .thanks_message {
+    text-align: center;
   }
 }

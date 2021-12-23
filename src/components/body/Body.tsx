@@ -4,6 +4,7 @@ import Contact from "./contact/Contact";
 import Hello from "./hello/Hello";
 import Projects from "./projects/Projects";
 import Skills from "./skills/Skills";
+
 const Body: React.FC = () => {
   return (
     <div className="body">

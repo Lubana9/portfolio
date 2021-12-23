@@ -1,35 +1,93 @@
+/* eslint-disable no-console */
+import { ChangeEvent, FormEvent, useRef, useState } from "react";
+
 import SocialContact from "@components/common/socialContact/socialContact";
 import "./contact.css";
+import axios from "axios";
 
-const Contact = () => {
+import { FormState, initialFormState, ServiceMessage } from "./types";
+
+const Contact: React.FC = () => {
+  const formId = "QIyuFDck";
+  const formSparkUrl = `https://submit-form.com/${formId}`;
+
+  const [formState, SetFormState] = useState<FormState>(initialFormState);
+  const [submitting, setSubmitting] = useState<boolean>(false);
+  const [message, setMessage] = useState<ServiceMessage>();
+  const handelChnge = (
+    e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    const { id, value } = e.target;
+    const formKey = id as keyof FormState;
+    const updatedFormState = { ...formState };
+    updatedFormState[formKey] = value;
+    SetFormState(updatedFormState);
+  };
+
+  const handelSubmit = async (e: FormEvent) => {
+    e.preventDefault();
+    setSubmitting(true);
+    await postSubmission();
+    setSubmitting(false);
+  };
+  const postSubmission = async () => {
+    const payload = {
+      message: { ...formState },
+    };
+    try {
+      await axios.post(formSparkUrl, payload);
+
+      setMessage({
+        class: "successful",
+        text: "Thank You! Your message has been sent",
+      });
+    } catch (error) {
+      setMessage({
+        class: "error",
+        text: "Sorry, there was a problem",
+      });
+    }
+  };
   return (
     <div className="contact">
       <div className="section--title">Contact</div>
       <div className="grid">
         <div className="contact-left">
-          <form className="contact-form">
+          {message && (
+            <div className={`thanks_message ${message.class}`}>
+              {message.text}
+            </div>
+          )}
+          <form className="contact-form" onSubmit={handelSubmit}>
             <input
+              onChange={handelChnge}
               className="contact--input"
               type="text"
+              id="name"
               placeholder="Name"
-              required
+              value={formState.name}
             />
             <input
+              onChange={handelChnge}
               className="contact--input"
               type="email"
+              id="email"
               placeholder="Email"
-              required
+              value={formState.email}
             />
             <textarea
+              onChange={handelChnge}
               className="contact--input contact_message"
               name="message"
               placeholder="Message"
-              required
+              id="message"
+              value={formState.message}
             ></textarea>
             <input
+              disabled={submitting}
               className="contact--input contact--submit"
               type="submit"
-              value="Send"
+              value={submitting ? "Sending..." : "Send"}
             />
           </form>
         </div>
