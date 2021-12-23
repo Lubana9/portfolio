@@ -16,7 +16,7 @@ const About: React.FC = () => {
         <p className="about_info--txt">
           Focused on creating <b className="txt-focused">beautiful</b> and{" "}
           <b className="txt-focused">user friendly </b>
-          applications while writing <b className="txt-focused">clean code</b> .
+          applications while writing <b className="txt-focused">clean code</b>.
         </p>
         <SocialContact />
         <div className="download">
