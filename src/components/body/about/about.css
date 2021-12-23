@@ -18,7 +18,7 @@
   font-weight: 700;
 }
 .about_info--heading {
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 600;
   color: var(--color-secondary);
 }
@@ -51,6 +51,12 @@
 .download:hover a {
   color: var(--color-background-secondary);
 }
+.about_info--txt {
+  font-size: 20px;
+}
+.txt-focused {
+  color: #fff;
+}
 @media only screen and (max-width: 720px) {
   .about {
     flex-direction: column;
@@ -60,9 +66,7 @@
   .about--img {
     height: 280px;
   }
-  .about_info--txt {
-    font-size: 18px;
-  }
+
   .header-container {
     text-align: center;
   }
