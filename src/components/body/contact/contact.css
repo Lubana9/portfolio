@@ -8,12 +8,16 @@
   grid-template-columns: repeat(2, 1fr);
   justify-items: center;
 }
+.contact-left {
+  width: 400px;
+}
 .contact-form {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 .contact--input {
-  width: 400px;
+  width: 100%;
   margin: 6px 18px;
   background: transparent;
   border: none;
@@ -37,12 +41,10 @@
 
 .contact--submit {
   font-size: 20px;
-
   border: 1px solid var(--color-primary);
   margin: 10px 20px 0px 20px;
   padding: 8px 16px;
   border-radius: 40px;
-
   color: var(--color-primary);
   background: transparent;
 }
@@ -74,11 +76,13 @@
   }
   .contact--submit {
     justify-content: center;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     display: flex;
     width: 90%;
   }
-
+  .contact-left {
+    width: auto;
+  }
   .contact-right {
     align-items: center;
   }

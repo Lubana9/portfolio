@@ -66,7 +66,9 @@
   .about--img {
     height: 280px;
   }
-
+  .about_info--txt {
+    text-align: center;
+  }
   .header-container {
     text-align: center;
   }
