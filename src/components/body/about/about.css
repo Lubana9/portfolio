@@ -1,11 +1,12 @@
 .about {
+  background: var(--color-background-secondary);
+  padding: 50px 12px 50px 0;
+}
+.about--container {
   display: flex;
   justify-content: space-betwen;
   align-items: center;
-  background: var(--color-background-secondary);
-  padding: 70px 0;
 }
-
 .about--img {
   height: 360px;
 }
@@ -58,7 +59,7 @@
   color: #fff;
 }
 @media only screen and (max-width: 720px) {
-  .about {
+  .about--container {
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -77,6 +78,9 @@
     justify-content: center;
     margin: 20px 40px;
     background: var(--color-secondary);
+  }
+  .download a {
+    color: var(--color-background-secondary);
   }
   .download img {
     display: inline-flex;

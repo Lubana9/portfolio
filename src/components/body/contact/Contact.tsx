@@ -1,5 +1,5 @@
 /* eslint-disable no-console */
-import { ChangeEvent, FormEvent, useRef, useState } from "react";
+import { ChangeEvent, FormEvent, useState } from "react";
 
 import SocialContact from "@components/common/socialContact/socialContact";
 import "./contact.css";
