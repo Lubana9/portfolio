@@ -6,7 +6,7 @@ import Web from "./web/web";
 const Header: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <div className="header">
+    <div className="header sticky ">
       <div className="logo">L</div>
       <div className="menu">
         <div className="web-menu">
