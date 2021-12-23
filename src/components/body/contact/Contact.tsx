@@ -29,6 +29,7 @@ const Contact: React.FC = () => {
     setSubmitting(true);
     await postSubmission();
     setSubmitting(false);
+    SetFormState(initialFormState);
   };
   const postSubmission = async () => {
     const payload = {
