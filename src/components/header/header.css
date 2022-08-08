@@ -38,8 +38,8 @@
   color: rgb(197, 63, 63); /*#fcb960 */
   background: linear-gradient(
     90deg,
-    rgba(197, 63, 63, 1) 35%,
-    rgba(252, 185, 96, 0.6225840678068102) 100%
+    #8d7eff 35%,
+    rgba(255, 255, 255, 0.6225840678068102) 100%
   );
   background-clip: text;
   -webkit-text-fill-color: transparent;

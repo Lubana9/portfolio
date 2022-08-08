@@ -4,7 +4,7 @@
 }
 .about--container {
   display: flex;
-  justify-content: space-betwen;
+  justify-content: space-between;
   align-items: center;
 }
 .about--img {
@@ -12,7 +12,7 @@
 }
 
 .about_info {
-  padding: 12px;
+  padding: 12px 12px 12px 40px;
 }
 .about_info--header {
   font-size: 36px;
@@ -46,8 +46,8 @@
 .download:hover {
   background: var(--color-secondary);
   border-color: var(--color-background-secondary);
-  transform: scale(1.1);
-  transition: all 0.5s;
+  transform: scale(1.01);
+  transition: all linear 0.5s;
 }
 .download:hover a {
   color: var(--color-background-secondary);
@@ -58,6 +58,14 @@
 .txt-focused {
   color: #fff;
 }
+.about svg {
+  width: 25vw !important;
+}
+@media (max-width: 1024px) {
+  .about svg {
+    width: 40vw !important;
+  }
+}
 @media only screen and (max-width: 720px) {
   .about--container {
     flex-direction: column;
@@ -67,9 +75,7 @@
   .about--img {
     height: 280px;
   }
-  .about_info--txt {
-    text-align: center;
-  }
+
   .header-container {
     text-align: center;
   }
@@ -84,5 +90,14 @@
   }
   .download img {
     display: inline-flex;
+  }
+  .about_info {
+    padding: 0;
+  }
+  .about_info--txt {
+    padding: 0 15px;
+  }
+  .about svg {
+    width: 100% !important;
   }
 }

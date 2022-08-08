@@ -10,10 +10,10 @@
   margin: auto;
 }
 .porfile--img {
-  border: 2px solid var(--color-primary);
   border-radius: 50%;
   overflow: hidden;
-  padding: 5px 0 0 0;
+  -webkit-filter: drop-shadow(1px 1px 10px var(--color-secondary));
+  filter: drop-shadow(1px 1px 10px var(--color-secondary));
   background: var(--color-background-secondary);
 }
 .Hello_text--conatiner {

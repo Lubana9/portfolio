@@ -1,5 +1,5 @@
 import "./hello.css";
-import image from "./img/Avatar.png";
+import image from "./img/myAvatar.png";
 const Hello = () => {
   return (
     <div className="hello">

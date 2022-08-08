@@ -2,11 +2,11 @@
   box-sizing: border-box;
 }
 :root {
-  --color-backround: #212121;
-  --color-background-primary: #202020;
-  --color-background-secondary: #181818;
-  --color-primary: #d5d5d5;
-  --color-secondary: #c2a583;
+  --color-backround: #252531;
+  --color-background-primary: #252531;
+  --color-background-secondary: #1c1c26;
+  --color-primary: #f8f8ff;
+  --color-secondary: #7888f3;
 }
 html {
   scroll-behavior: smooth;
