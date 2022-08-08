@@ -1,10 +1,8 @@
 import "./about.css";
 import SocialContact from "@components/common/socialContact/socialContact";
-import Lottie from "lottie-react";
 import { useLottie } from "lottie-react";
 
 import animationData from "./A-data/animationData.json";
-import image from "./img/Coding-amico.png";
 import download from "./img/file_download.svg";
 const About: React.FC = () => {
   const defaultOptions = {
