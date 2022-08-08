@@ -8,16 +8,16 @@ import Skills from "./skills/Skills";
 const Body: React.FC = () => {
   return (
     <div className="body">
-      <section id="hello">
+      <section id="">
         <Hello />
       </section>
-      <section id="aboutme">
+      <section id="about">
         <About />
       </section>
       <section id="skills">
         <Skills />
       </section>
-      <section id="project">
+      <section id="projects">
         <Projects />
       </section>
       <section id="contact">

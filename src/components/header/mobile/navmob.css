@@ -1,0 +1,96 @@
+.floating-menu {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  bottom: 35px;
+  right: 12px;
+  backdrop-filter: blur(15px);
+}
+.floating-menu input {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  margin: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+.floating-menu input:checked ~ .plus-icon {
+  transform: rotate(135deg);
+}
+.floating-menu input:checked ~ .floating-nav li:nth-child(1) {
+  transform: translatey(-48px);
+}
+.floating-menu input:checked ~ .floating-nav li:nth-child(2) {
+  transform: translatey(-88px);
+}
+.floating-menu input:checked ~ .floating-nav li:nth-child(3) {
+  transform: translatey(-128px);
+}
+.floating-menu input:checked ~ .floating-nav li:nth-child(4) {
+  transform: translatey(-168px);
+}
+.floating-menu input:checked ~ .floating-nav li:nth-child(5) {
+  transform: translatey(-208px);
+}
+.floating-menu input ~ .plus-icon {
+  transform: rotate(0);
+}
+.floating-menu > .plus-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  line-height: 1;
+  color: #fff;
+  background: rgb(88, 117, 248);
+  border-radius: 50%;
+  transform: rotate(0);
+  transition: all 0.5s ease;
+  pointer-events: none;
+  position: absolute;
+  box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.2);
+}
+.floating-menu > .floating-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+.floating-menu > .floating-nav li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: absolute;
+  transition: all 0.5s ease;
+}
+.floating-menu > .floating-nav li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+  position: absolute;
+
+  font-size: 14px;
+  line-height: 1;
+  color: var(--color-backround);
+}
+
+.floating-menu > .floating-nav li a.active {
+  background: rgb(88, 117, 248);
+  color: var(--color-primary);
+}
