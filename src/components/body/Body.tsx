@@ -8,7 +8,7 @@ import Skills from "./skills/Skills";
 const Body: React.FC = () => {
   return (
     <div className="body">
-      <section id="">
+      <section id="hello">
         <Hello />
       </section>
       <section id="about">

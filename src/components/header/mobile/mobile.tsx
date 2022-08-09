@@ -21,9 +21,9 @@ const Mobile: React.FC = () => {
         <ul className="floating-nav">
           <li>
             <a
-              href="#"
-              onClick={() => setActiveNav("#")}
-              className={activeNav === "#" ? "active" : ""}
+              href="#hello"
+              onClick={() => setActiveNav("#hello")}
+              className={activeNav === "#hello" ? "active" : ""}
             >
               <AiOutlineHome />
             </a>
