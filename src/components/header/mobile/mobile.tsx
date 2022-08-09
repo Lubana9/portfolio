@@ -71,21 +71,3 @@ const Mobile: React.FC = () => {
 };
 
 export default Mobile;
-
-// <ul classNameName="mobile">
-//   <li classNameName="mobile--option">
-//     <a href="#hello">Home</a>
-//   </li>
-//   <li classNameName="mobile--option">
-//     <a href="#aboutme">About</a>
-//   </li>
-//   <li classNameName="mobile--option">
-//     <a href="#skills">Skills</a>
-//   </li>
-//   <li classNameName="mobile--option">
-//     <a href="#project"> Projects </a>
-//   </li>
-//   <li classNameName="mobile--option">
-//     <a href="#contact">Contact</a>
-//   </li>
-// </ul>
