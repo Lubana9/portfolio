@@ -8,14 +8,11 @@
   grid-template-columns: repeat(2, 1fr);
   justify-items: center;
 }
-.contact-left {
-  width: 400px;
-}
+
 .contact-form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-left: 12px;
 }
 .contact--input {
   width: 100%;
@@ -81,7 +78,16 @@
   padding-left: 12px;
   padding-bottom: 10px;
 }
+@media (min-width: 780px) {
+  .contact-left {
+    width: 400px;
+  }
+}
 @media only screen and (max-width: 780px) {
+  .contact {
+    background: var(--color-backround);
+    z-index: 2;
+  }
   .grid {
     grid-template-columns: repeat(1, 1fr);
   }

@@ -2,9 +2,7 @@
   display: flex;
   justify-content: start;
 }
-.social-icon--container {
-  margin-right: 30px;
-}
+
 .social-icon {
   height: 40px;
 }
@@ -14,13 +12,10 @@
 }
 @media only screen and (max-width: 720px) {
   .social_contant {
-    justify-content: center;
-  }
-  .social-icon--container {
-    margin-right: 20px;
+    justify-content: space-around;
   }
 
   .socail-icon {
-    height: 20px;
+    height: 10px;
   }
 }
