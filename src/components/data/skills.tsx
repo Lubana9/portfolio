@@ -1,3 +1,5 @@
+import reactN from "../assets/icons/atom.png";
+import figma from "../assets/icons/figma.png";
 export const SkillsData = [
   {
     name: "React",
@@ -56,5 +58,13 @@ export const SkillsData = [
   {
     name: "SASS",
     icon: <i className="devicon-sass-original colored skill--icon"></i>,
+  },
+  {
+    name: "Figma",
+    icon: <img src={figma} alt="figma" className="skill--icon" />,
+  },
+  {
+    name: "React-native",
+    icon: <img src={reactN} alt="figma" className="skill--icon" />,
   },
 ];

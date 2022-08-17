@@ -7,6 +7,7 @@
   bottom: 35px;
   right: 12px;
   backdrop-filter: blur(15px);
+  z-index: 4;
 }
 .floating-menu input {
   position: absolute;

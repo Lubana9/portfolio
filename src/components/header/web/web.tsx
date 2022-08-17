@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import { useState } from "react";
 
 import { AiOutlineHome, AiOutlineUser, AiOutlineMessage } from "react-icons/ai";
@@ -11,9 +12,9 @@ function Web() {
   return (
     <nav>
       <a
-        href="#hello"
-        onClick={() => setActiveNav("#hello")}
-        className={activeNav === "#hello" ? "active" : ""}
+        href="#"
+        onClick={() => setActiveNav("#")}
+        className={activeNav === "#" ? "active" : ""}
       >
         <AiOutlineHome />
       </a>

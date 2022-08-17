@@ -1,5 +1,6 @@
-import { SkillsData } from "@components/data/skills";
 import "./skills.css";
+
+import { SkillsData } from "@components/data/skills";
 
 const Skills = () => {
   const data = SkillsData;
@@ -10,9 +11,12 @@ const Skills = () => {
         {data.map((item) => {
           return (
             <div key={item.name} className="skill--container">
-              <div>{item.icon}</div>
+              <div data-aos="fade-up">{item.icon}</div>
 
-              <div className="skill--title"> {item.name}</div>
+              <div data-aos="fade-up" className="skill--title">
+                {" "}
+                {item.name}
+              </div>
             </div>
           );
         })}

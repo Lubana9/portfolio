@@ -8,7 +8,7 @@ const SocialContact = () => {
       {data.map((item) => {
         return (
           <a key={item.platform} href={item.link}>
-            <div className="social-icon--container">
+            <div data-aos="fade-up" className="social-icon--container">
               <img src={item.icon} alt="" className="social-icon" />
             </div>
           </a>
