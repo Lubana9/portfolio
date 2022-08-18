@@ -1,6 +1,6 @@
 import About from "./about/About";
 import "./body.css";
-import Contact from "./contact/Contact";
+// import Contact from "./contact/Contact";
 import Hello from "./hello/Hello";
 import Projects from "./projects/Projects";
 import Skills from "./skills/Skills";
@@ -20,9 +20,7 @@ const Body: React.FC = () => {
       <section id="projects">
         <Projects />
       </section>
-      <section id="contact">
-        <Contact />
-      </section>
+      <section id="contact">{/* <Contact /> */}</section>
     </div>
   );
 };
