@@ -12,7 +12,7 @@ const Home: React.FC = () => {
   }, []);
   return (
     <div className="home">
-      <Header />
+      {/* <Header /> */}
       <Body />
       <Footer />
     </div>
