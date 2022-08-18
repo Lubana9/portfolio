@@ -5,7 +5,8 @@ import Web from "./web/web";
 const Header: React.FC = () => {
   const isMobile = window.screen.width < 600;
   return (
-    <>{isMobile ? <Mobile /> : <Web />}</>
+    <Web />
+    // <>{isMobile ? <Mobile /> : <Web />}</>
     // <div className="header sticky ">
     //   <div className="logo">L</div>
     //   <div className="menu">

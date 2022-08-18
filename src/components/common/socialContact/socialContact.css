@@ -2,9 +2,12 @@
   display: flex;
   justify-content: start;
 }
-
+.social-icon--container {
+  margin-right: 30px;
+}
 .social-icon {
   height: 40px;
+  margin: 0 10px;
 }
 .social-icon:hover {
   transform: scale(1.1);
@@ -14,8 +17,11 @@
   .social_contant {
     justify-content: space-around;
   }
+  .social-icon--container {
+    margin-right: 0;
+  }
 
   .socail-icon {
-    height: 10px;
+    height: 20px;
   }
 }

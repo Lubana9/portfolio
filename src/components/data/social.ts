@@ -5,9 +5,9 @@ export const Social = [
     icon: require("../assets/icons/instagram.svg").default,
   },
   {
-    platform: "Facebook",
-    link: "https://www.facebook.com/lubana49",
-    icon: require("../assets/icons/facebook.svg").default,
+    platform: "Telegram",
+    link: "https://t.me/Lubana23",
+    icon: require("../assets/icons/telegram.svg").default,
   },
   {
     platform: "GitHub",
