@@ -2,6 +2,7 @@ import { useEffect } from "react";
 
 import Body from "@components/body";
 import Footer from "@components/footer";
+import Header from "@components/header";
 import "./home.css";
 import "aos/dist/aos.css";
 import Aos from "aos";
@@ -11,7 +12,7 @@ const Home: React.FC = () => {
   }, []);
   return (
     <div className="home">
-      {/* <Header /> */}
+      <Header />
       <Body />
       <Footer />
     </div>

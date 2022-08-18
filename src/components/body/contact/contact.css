@@ -64,7 +64,7 @@
 .contact_email {
   font-size: 20px;
   margin-bottom: 24px;
-  margin-right: 10px;
+  margin-left: 10px;
 }
 .contact--social {
   display: flex;
@@ -90,16 +90,18 @@
     z-index: 2;
   }
   .grid {
-    grid-template-columns: repeat(1, 1fr);
+    display: flex;
+    flex-direction: column;
   }
   .contact--submit {
     justify-content: center;
     margin-bottom: 30px;
     display: flex;
-    width: 90%;
+    width: 200px;
   }
   .contact-left {
-    width: auto;
+    width: 270px;
+    margin: auto;
   }
   .contact-right {
     align-items: center;
