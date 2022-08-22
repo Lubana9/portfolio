@@ -29,7 +29,16 @@ const About: React.FC = () => {
               <b className="txt-focused">beautiful</b> and{" "}
               <b className="txt-focused">user friendly </b>
               applications while writing{" "}
-              <b className="txt-focused">clean code</b>.
+              <b className="txt-focused">clean code</b>. <br />
+              <br />
+              <i>
+                {" "}
+                I believe everything is an Art when you put your consciousness
+                in it.{" "}
+              </i>
+              <br />
+              <br />
+              You can connect with me via social links.
             </p>
             <SocialContact />
             <div className="download" data-aos="fade-up">

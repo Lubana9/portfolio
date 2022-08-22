@@ -21,6 +21,7 @@
     "react-responsive-carousel": "^3.2.23",
     "react-scripts": "4.0.3",
     "react-tsparticles": "^2.2.2",
+    "smooth-scrollbar": "^8.7.5",
     "tsparticles": "^2.2.2",
     "typescript": "^4.5.2",
     "web-vitals": "^1.1.2"

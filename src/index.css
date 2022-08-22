@@ -9,3 +9,15 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+@media screen and (min-width: 1201px) {
+  ::-webkit-scrollbar-thumb {
+    background: #7888f3;
+    border-radius: 10px;
+  }
+  ::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+    background: transparent;
+  }
+}
