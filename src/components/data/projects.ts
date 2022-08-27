@@ -1,7 +1,7 @@
 export const ProjectData = [
   {
     id: 1,
-    title: "Github Clients",
+    title: "GitHub clients SE",
     tags: ["React", "TypeScript", "MobX", "SASS", "antd"],
     demo: "https://github-clients.netlify.app",
     github: "https://github.com/Lubana9/github-clients-with-github-API",
